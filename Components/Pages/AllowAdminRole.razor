@@ -1,0 +1,13 @@
+@page "/allowAdminRole"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@attribute [Authorize(Roles = "Admin")]
+
+
+
+<p>You can only see this if you're in the 'Admin' or 'Superuser' role.</p>
+
+
+@code {
+    
+}

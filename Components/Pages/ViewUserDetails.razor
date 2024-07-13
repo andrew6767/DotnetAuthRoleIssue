@@ -1,0 +1,33 @@
+@page "/viewUserDetails"
+@using Microsoft.AspNetCore.Authorization
+@using System.Text.Json
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+ 
+ 
+<h3>ViewUserDetails</h3>
+@ClaimsPrincipalUser.Identity.Name
+ 
+@if (ClaimsPrincipalUser.Claims is not null)
+{
+    @foreach (var claim in ClaimsPrincipalUser.Claims)
+    {
+        <div>@claim.Type : @claim.Value </div>
+    }
+}
+ 
+@code {
+    ClaimsPrincipal ClaimsPrincipalUser;
+ 
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        ClaimsPrincipalUser = authState.User;
+ 
+        if (ClaimsPrincipalUser.Identity != null)
+        {
+            var useridentity = ClaimsPrincipalUser.Identity.Name;
+        }
+    }
+}

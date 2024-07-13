@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Volumes/USB1/auth1/obj/Debug/net8.0/scopedcss/projectbundle/auth1.bundle.scp.css",
+      "PackagePath": "staticwebassets/auth1.bundle.scp.css"
+    },
+    {
+      "Id": "/Volumes/USB1/auth1/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Volumes/USB1/auth1/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Volumes/USB1/auth1/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Volumes/USB1/auth1/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.auth1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.auth1.props",
+      "PackagePath": "build\\auth1.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.auth1.props",
+      "PackagePath": "buildMultiTargeting\\auth1.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.auth1.props",
+      "PackagePath": "buildTransitive\\auth1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

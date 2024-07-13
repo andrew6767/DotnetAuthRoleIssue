@@ -1,0 +1,18 @@
+@page "/authenticationTest"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+
+<AuthorizeView Roles="Admin">
+    <p>User: @context.User.Identity.Name</p>
+    <p>You have the 'Admin' role claim.</p>
+    <AuthorizeView Roles="Superuser" Context="innerContext">
+        <p>User: @innerContext.User.Identity.Name</p>
+        <p>You have both 'Admin' and 'Superuser' role claims.</p>
+    </AuthorizeView>
+</AuthorizeView>
+
+
+
+@code {
+    
+}
