@@ -6,13 +6,14 @@ public class CustomAuthStateProvider : AuthenticationStateProvider
 {
     public override Task<AuthenticationState> GetAuthenticationStateAsync()
     {
+
         var identity = new ClaimsIdentity(new[]
         {
             new Claim(ClaimTypes.Name, "mrfibuli"),
             new Claim(ClaimTypes.Role, "Superuser"),
             new Claim(ClaimTypes.Role, "Admin"),
         }, "Custom Authentication");
-
+        //identity.AddClaim(new Claim(identity.RoleClaimType, "Admin"));
 
         var user = new ClaimsPrincipal(identity);
 

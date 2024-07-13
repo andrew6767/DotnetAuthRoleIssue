@@ -88,3 +88,4 @@
 /Volumes/USB1/auth1/obj/Debug/net8.0/auth1.csproj.Up2Date
 /Volumes/USB1/auth1/obj/Debug/net8.0/auth1.genruntimeconfig.cache
 /Volumes/USB1/auth1/obj/Debug/net8.0/ref/auth1.dll
+/Volumes/USB1/auth1/obj/Debug/net8.0/auth1.sourcelink.json
